@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Created by Michał Antropik, MIT license ©2018 -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#820303"/>
+		<meta name="keywords" content="Pomodoro, Pomodoro Clock, Pomodoro Technique, Tomato, Tomato Timer, Tomato Clock, Work, Design, HTML, CSS, JavaScript">
+		<meta name="author" content="Michał Antropik">
+		<title>Pomodoro Clock</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+		 <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="styles/pomodoro-clock.css"/>
+		
+	</head>
+	<body>
+		
+		<div id="content-wrapper">
+			<div id="title">Pomodoro Clock</div>
+			
+			<div id="time-setter-wrapper">
+				<div id="session-length-wrapper">
+					<div id="session-length-title">Session Length</div>
+					<div id="session-length-value"><span id="session-length-decrease-button" class="decrease-button">-</span>
+						<span id="session-length-set-value">25</span> min <span id="session-length-increase-button" class="increase-button">+</span></div>
+					<div id="start-stop-button" class="function-buttons">Start</div>
+				</div>
+				<div id="break-length-wrapper">
+					<div id="break-length-title">Break Length</div>
+					<div id="break-length-value"><span id="break-length-decrease-button" class="decrease-button">-</span>
+						<span id="break-length-set-value">5</span> min <span id="break-length-increase-button" class="increase-button">+</span></div>
+					<div id="reset-button" class="function-buttons">Reset</div>
+				</div>
+			</div>
+			
+			<div id="clock">
+				<div id="leaf"></div>
+				<div id="timer"><span id="minutes-shown-on-clock">25</span>:<span id="seconds-shown-on-clock">00</span></div>
+			</div>
+			
+		</div>
+
+		<!-- JavaScript -->
+	    <script src="scripts/scripts.js"></script>
+		
+	</body>
+</html>

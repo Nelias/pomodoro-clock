@@ -1,0 +1,112 @@
+:root {
+  --middle-of-leaf: #1d7a36;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: black no-repeat fixed center;
+  font-family: Lobster;
+  color: white;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+#title {
+  font-size: 6vw;
+  padding-bottom: 2vw;
+}
+
+#time-setter-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  font-size: 1.45vw;
+}
+
+#session-length-wrapper {
+  margin-right: 5vw;
+}
+
+#session-length-value, #break-length-value {
+  margin-left: 1vw;
+}
+
+.decrease-button {
+  color: red;
+  font-size: 2.2vw;
+  padding-right: 0.3vw;
+}
+
+.increase-button {
+  color: green;
+  font-size: 2vw;
+  padding-left: 0.3vw;
+}
+
+.function-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  margin-top: 2vw;
+  border-style: solid;
+  border-color: #8a0404;
+  border-radius: 5vw;
+  border-width: 0.1vw;
+  width: 5.5vw;
+  padding: 0.2vw;
+  margin-left: 1.1vw;
+  background: linear-gradient(0deg, #820303, #af0505, #af0505, #820303);
+}
+
+#reset-button {
+  margin-left: 0.8vw;
+}
+
+#clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  background: linear-gradient(0deg, #820303, #af0505, #e42f11, #820303);
+  border-radius: 50vw;
+  border-style: solid;
+  border-width: 0.2vw;
+  border-color: #8a0404;
+  width: 24vw;
+  margin-top: 5vw;
+  margin-left: 1.6vw;
+}
+
+#leaf {
+  background: #128200;
+  transform: skewY(56deg );
+  background: linear-gradient(-56deg, #128200, #128200, #2a3c03, #128200, #128200);
+  position: absolute;
+  margin-top: -9.85vw;
+  width: 2.4vw;
+  height: 3.7vw;
+  border-style: solid;
+  border-width: 0.12vw;
+  border-radius: 1.5vw;
+  border-color: #2a3c03;
+}
+
+#timer {
+  font-size: 6vw;
+  padding: 6vw;
+  text-shadow: -0.1vw 0 #2a3c03, 0 0.1vw #2a3c03, 0.1vw 0 #2a3c03, 0 -0.1vw red;
+}
+
+.increase-button, #clock, .function-buttons, .decrease-button:hover {
+  cursor: pointer;
+}
